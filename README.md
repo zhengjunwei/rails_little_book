@@ -2,7 +2,7 @@ rails_little_book
 =================
 
 
-chp 0 prepare #环境 新建项目 mv的解释 git
+[chp 0 prepare](https://github.com/jerry-tao/rails_little_book/blob/master/chp_0/0_prepare.md) #环境 新建项目 mv的解释 git
 
 chp 1 first mvc #model CRUD REST assets
 
