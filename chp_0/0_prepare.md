@@ -119,7 +119,7 @@ end
 
 如果你在controller的action里不指定一个view，那么默认会渲染app/view/#{controller}/#{action}.html.erb这个文件。
 
-erb文件是rails默认的一种模板文件（还有其他类型的模板，比如slim和haml，本书不会介绍，感兴趣的读者请自行Google。），这种模板的语法基本与HTML一致，只是在其中可以潜入ruby带啊吗。
+erb文件是rails默认的一种模板文件（还有其他类型的模板，比如slim和haml，本书不会介绍，感兴趣的读者请自行Google。），这种模板的语法基本与HTML一致，只是在其中可以嵌入ruby代码。
 
 好了，回过头来我们修改一下controller和view，看一下他们是如何共享变量的还有在erb里如何使用ruby代码。
 
