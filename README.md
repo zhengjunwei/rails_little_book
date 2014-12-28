@@ -2,15 +2,15 @@ rails_little_book
 =================
 
 
-[chp 0 prepare](https://github.com/jerry-tao/rails_little_book/blob/master/chp_0/0_prepare.md) #环境 新建项目 mv的解释 git
+[chp 0 prepare](https://github.com/jerry-tao/rails_little_book/blob/master/chp_0/0_prepare.md) #环境 新建项目 vc的解释 git
 
-chp 1 first mvc #model CRUD REST assets
+chp 1 first mvc #model CRUD REST git-branch Gemfile rspec dsl
 
-chp 2 first association #Associate rspec dsl
+chp 2 first association #Associate assets migration validation git-diff
 
 chp 3 user system #Devise upload email gemfile initializer
 
-chp 4 shopcart #ajax
+chp 4 shopcart #ajax pundit
 
 chp 5 order #uuid postgresql .env scope
 
