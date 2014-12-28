@@ -20,6 +20,7 @@ https://github.com/jerry-tao/rails_little_book/tree/master/chp_1/source/eshop
 ## Step 0: git branch
 
 在开始之前，我们需要先在我们的项目上新建一个git分支，新建的分支与当前分支的代码完全一致（默认情况下我们是在master分支上，即主干）。
+
 分支的作用在于，当我们协作开发时，可以完成各自的工作而互不干扰，并且可以保证项目的主干永远是可运行的代码。
 
 ```
@@ -101,9 +102,11 @@ rake db:migrate
 
 ## Step 3: “是的，但是。。。到底发生了什么？”
 
-`rails g(generate) scaffold` 这句命令（scaffold一般翻译为脚手架，个人觉得很别扭，就不翻译了）这句命令会帮你生成对一个资源进行增删改查操作的所有文件，包括前台的ejb模板一直到对数据库进行修改的命令。让我们一个文件一个文件的走过去。
+`rails g(generate) scaffold` 这句命令（scaffold一般翻译为脚手架，个人觉得很别扭，就不翻译了）这句命令会帮你生成对一个资源进行增删改查操作的所有文件，包括前台的ejb模板一直到对数据库进行修改的命令。
 
-** migration **
+让我们一个文件一个文件的走过去。
+
+**migration**
 
 在db/migrate/下你会找到一个20xxxxxxxxx_create_product.rb的文件，我们打开看一眼，这个里面的代码大概如下：
 
@@ -163,7 +166,7 @@ production:
 
 所以这个时候你应该看到在db文件夹下有一个development.sqlite3的文件生成，这个就是我们目前使用的数据库。
 
-** Model **
+**Mode**
 
 OK，让我们打开app/models/product.rb文件看一下（注意文件名，里面的类名还有migration的文件名，类名之间都是有对应关系的，不要轻易修改。）：
 
@@ -190,10 +193,11 @@ product = Product.first # 取数据库里的第一条记录。
 product.description #输出这个商品的description。
 ```
 
-通过上面的测试我们可以看到所有必备的操作Product都已经有了，部分方法是继承自ActiveRecord::Base, 比如all save find first等，还有部分方法是ActiveRecord读取我们对应的数据库表结构自动为我们生成的，比如 name=（注意，name=是一个完整的方法名，并不是我们常见的等号赋值操作），name
-（name也是一个方法，里面返回值是数据库里的值）等。
+通过上面的测试我们可以看到所有必备的操作Product都已经有了，部分方法是继承自ActiveRecord::Base, 比如all save find first等。
 
-** Route && Controller **
+还有部分方法是ActiveRecord读取我们对应的数据库表结构自动为我们生成的，比如 name=（注意，name=是一个完整的方法名，并不是我们常见的等号赋值操作），name（name也是一个方法，里面返回值是数据库里的值）等。
+
+**Route && Controller**
 
 打开我们的config/routes.rb，会发现里面多了下面一行，
 
@@ -239,7 +243,7 @@ end
 
 product_controller中其他代码主要是对上面七个地址响应的操作，我们可以自己先看一下其中涉及到model的操作方法，具体细节以后会介绍。
 
-** View **
+**View**
 
 在app/views/products/文件夹下我们可以看到5个ejb文件（jbuilder文件先不讨论。），除了4个是跟action对应的我们还能看到一个_form.html.erb，一般来说，在rails里以_开头的文件表示这是一个被其他view引用的view。
 所以我们打开new和edit都可以看到下面这一句（其他的内容都先跳过）。
@@ -285,7 +289,7 @@ index.html.erb里面主要是通过一个循环把取到的所有 `@products` �
 
 ```
 
-** RSpec **
+**RSpec**
 
 我们的测试代码在spec文件夹下，代码组织结构跟app类似，因为我们是scaffold生成的代码，所以在spec/controllers/products_controller_spec.rb里也为我们自动生成了对基本操作的测试。
 
