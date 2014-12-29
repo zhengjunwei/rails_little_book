@@ -35,10 +35,10 @@ sudo apt-get install -y wget vim build-essential openssl libreadline6 libreadlin
 安装rbenv
 ```
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile #如果自己系统瞎是.bashrc 自己修改成.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile #如果自己系统瞎是.bashrc 自己修改成.bashrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile #如果自己系统下是.bashrc 自己修改成.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile #如果自己系统下是.bashrc 自己修改成.bashrc
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-source ~/.bash_profile #如果自己系统瞎是.bashrc 自己修改成.bashrc
+source ~/.bash_profile #如果自己系统下是.bashrc 自己修改成.bashrc
 ```
 rbenv的主页是https://github.com/sstephenson/rbenv  ，更多的安装使用细节可以去他们的网站查看。
 
