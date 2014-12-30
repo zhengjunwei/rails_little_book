@@ -9,7 +9,7 @@
 - 了解Gemfile。
 - 了解rails的文件结构和框架组成。
 - 了解rspec。
-- 了解dsl。
+- 了解DSL。
 - 了解REST。
 - 完成一个完整的增删改查操作（^.^）。
 
@@ -59,7 +59,7 @@ gem 'factory_girl_rails'
 
 - activesupport：基础扩展库。
 - active_record: 数据库操作相关。
-- action_pack: controoler、 router相关。
+- action_pack: controller、 router相关。
 - action_view: view相关。
 - action_mailer: email相关。
 - ...
@@ -102,7 +102,7 @@ rake db:migrate
 
 ## Step 3: “是的，但是。。。到底发生了什么？”
 
-`rails g(generate) scaffold` 这句命令（scaffold一般翻译为脚手架，个人觉得很别扭，就不翻译了）这句命令会帮你生成对一个资源进行增删改查操作的所有文件，包括前台的ejb模板一直到对数据库进行修改的命令。
+`rails g(generate) scaffold` 这句命令（scaffold一般翻译为脚手架，个人觉得很别扭，就不翻译了）这句命令会帮你生成对一个资源进行增删改查操作的所有文件，包括前台的erb模板一直到对数据库进行修改的命令。
 
 让我们一个文件一个文件的走过去。
 
@@ -166,7 +166,7 @@ production:
 
 所以这个时候你应该看到在db文件夹下有一个development.sqlite3的文件生成，这个就是我们目前使用的数据库。
 
-**Mode**
+**Model**
 
 OK，让我们打开app/models/product.rb文件看一下（注意文件名，里面的类名还有migration的文件名，类名之间都是有对应关系的，不要轻易修改。）：
 
