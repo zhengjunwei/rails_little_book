@@ -217,7 +217,9 @@ PUT /products/:id => products#update
 DELETE /products/:id => products#destroy
 ```
 
-这里面都是比较标准的增删改查的操作（以后我们还会涉及到一些自定义的操作），其中你可以看到好多操作都是同一个url，所以HTTP VERB（即GET, POST, PUT, DELETE）在rails里有很重要的意义，其中GET代表这个仅仅是读取，POST代表是新建，PUT代表是修改，DELETE代表是删除。
+这里面都是比较标准的增删改查的操作（以后我们还会涉及到一些自定义的操作），其中你可以看到好多操作都是同一个url，所以HTTP VERB（即GET, POST, PUT, DELETE）在rails里有很重要的意义。
+
+其中GET代表这个仅仅是读取，POST代表是新建，PUT代表是修改，DELETE代表是删除。
 
 然后让我们看一下controoler(app/controllers/products_controller.rb)。
 
