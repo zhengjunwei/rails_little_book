@@ -18,7 +18,7 @@ Rails Little Book
 - *Gemfile(这里记得详细的去说明一下)
 - DSL
 
-[Chapter 2 First Association](https://github.com/jerry-tao/rails_little_book/blob/master/chp_2/2_associate_model_and_views.md)
+**[Chapter 2 First Association](https://github.com/jerry-tao/rails_little_book/blob/master/chp_2/2_associate_model_and_views.md)**
 
 - *Migration
 - Association
