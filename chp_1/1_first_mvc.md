@@ -26,7 +26,7 @@ https://github.com/jerry-tao/rails_little_book/tree/master/chp_1/source/eshop
 ```
 cd eshop #进入项目文件夹。
 git branch #列出所有分支，*号表示当前所在分支。
-git branch -b product_feature #新建一个名为product_feature的分支，注意，此时我们还在master分支上并没有切换过去。
+git branch product_feature #新建一个名为product_feature的分支，注意，此时我们还在master分支上并没有切换过去。
 git checkout product_feature #切换到product_feature分支。
 ```
 
