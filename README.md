@@ -1,12 +1,30 @@
-rails_little_book
+Rails Little Book
 =================
 
 
-[chp 0 prepare](https://github.com/jerry-tao/rails_little_book/blob/master/chp_0/0_prepare.md) #环境 新建项目 vc的解释 git
+**[Chapter 0 Prepare](https://github.com/jerry-tao/rails_little_book/blob/master/chp_0/0_prepare.md)**
 
-[chp 1 first mvc](https://github.com/jerry-tao/rails_little_book/blob/master/chp_1/1_first_mvc.md) #model CRUD REST git-branch Gemfile rspec dsl
+- 搭建环境
+- 新建项目
+- 认识一下View和Controller和router
+- 认识git
 
-chp 2 first association #Associate assets migration validation git-diff
+**[Chapter 1 First MVC](https://github.com/jerry-tao/rails_little_book/blob/master/chp_1/1_first_mvc.md)**
+
+- MVC
+- CRUD
+- REST
+- git branch
+- *Gemfile(这里记得详细的去说明一下)
+- DSL
+
+[Chapter 2 First Association](https://github.com/jerry-tao/rails_little_book/blob/master/chp_2/2_associate_model_and_views.md)
+
+- *Migration
+- Association
+- Validation
+- Seed
+- pull/request 
 
 chp 3 user system #Devise upload email gemfile initializer
 
