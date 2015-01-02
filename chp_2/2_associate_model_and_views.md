@@ -80,6 +80,8 @@ class ChangeProducts < ActiveRecord::Migration
 end
 ```
 
+然后还是需要执行一下`rake db:migrate` 对数据库的结构进行修改。
+
 这里我们可以看到两个方法，一个是add_column，这个方法的第一个参数是表名，第二个参数是新添加的column名称，第三个参数是类型，我们这里类型是decimal，有效位数是9，保留小数点后两位。
 
 (对:price, scale:2 这种语法有疑问的请自行搜索ruby symble，简单地说 你可以把:price理解为"price",把price:2理解为一个键值对，key是:price, value是2，并且，键值对的参数的顺序并没有任何约束，比如你想写成scale: 2, precision: 5也是可以的，去查看一下ruby的方法参数的使用说明你会对这个问题有更深刻的认识。)
