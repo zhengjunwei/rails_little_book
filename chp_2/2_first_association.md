@@ -6,8 +6,8 @@
 
 **Destination**
 - Migration的细节。
-- 了解validation。
-- 了解rails里的association。
+- View的细节。
+- 了解initializer。
 - 了解rake。
 - 了解db:seed。
 - 完成给商品添加分类。
@@ -127,7 +127,7 @@ category ＝ Category.create(name:'电子产品') #create方法会直接保存�
 product ＝ Product.new(name:'iPhone', description:'Just another phone.') #new方法并不会保存到数据库
 product.category = category
 product.save #这里才保存到数据库
-product.category.name 
+product.category.name
 product.category_id #这个就是正常的属性 上面的是association
 ```
 
@@ -146,7 +146,7 @@ product.category_id #这个就是正常的属性 上面的是association
 ```
 class Product < ActiveRecord::Base
   belongs_to :category
-  
+
   validates :name, presence: true #必填
   validates :price, presence: true ,numericality: {greater_than: 0} #必填，必须是数字，必须大于0
   validates :category_id, presence: true # 必填
@@ -167,7 +167,7 @@ product.price = '4999'
 product.category_id = 1
 product.save
 product.valid?
-product.errors 
+product.errors
 ```
 
 ## Step 4: 修改Controller和View

@@ -24,11 +24,22 @@ Rails Little Book
 - Association
 - Validation
 - Seed
-- pull/request 
+- pull/request
 
-chp 3 user system #Devise upload email gemfile initializer
+**[Chapter 3 Basic User System](https://github.com/jerry-tao/rails_little_book/blob/master/chp_3/3_basic_user_system.md)**
 
-chp 4 shopcart #ajax pundit
+- devise
+- initializer
+- *routes
+- *Association
+
+**Chapter 4 Validates Associations Upload File and Pagination
+
+- Validations
+- Associations
+- Upload file
+- Pagination
+- Bootstrap
 
 chp 5 order #uuid postgresql .env scope
 

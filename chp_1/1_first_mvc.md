@@ -39,9 +39,17 @@ gem是ruby的代码包格式，例如rails也是以gem包发行的（还记得�
 打开这个文件我们可以看到诸如下面的信息：
 
 ```
-gem 'rails', '~> 4.2' #使用rails，版本4.2
+gem 'rails', '~> 4.2' #
 ```
-这个文件里还有很多其他的gem，以后如果我们用到会介绍的。
+这一行的意思是使用rails，版本4.2, 在这个文件的一开始`source 'https://rubygems.org'` 指定里去哪里下载gem。
+
+如果不指定一个版本，默认会一直使用你第一次bundle的时候能得到的最新版本。
+
+除了使用rubygems源内的gem，你也可以自己指定使用某个gem并指定git地址（一般用于使用最新的还没有发布的或者修复里某个bug还没有发布的gem版本），或者使用一个本地文件地址（一般用于自己写的一些gem）。
+
+同时你会看到类似`group :test do ... end` 这种语法，为gem分组，例如test分组的gem只会在test环境被使用，production和development是不会被使用的。
+
+具体使用方式可以到http://bundler.io/ 去查看。
 
 目前为止，让我们先添加两个gem：
 
@@ -161,6 +169,8 @@ production:
   database: db/production.sqlite3
 
 ```
+
+在rails中默认会帮我们创建三种不同的环境，development，test和production，这三种环境会有一些细微的区别，比如使用不同的数据库，加载不同的gem，以不同的方式去响应请求等。
 
 我们使用数据库的设置基本都在这个文件里，在我们没有进行修改的情况下默认使用的是sqlite3(一种文件数据库，支持sql语法并且足够简单，一般用于开发阶段。)，其中分为development，test，和production三个数据库（刚才我们默认执行的是development环境），这三种环境分别对应不同的数据库。
 
