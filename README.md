@@ -1,39 +1,45 @@
 Rails Little Book
 =================
 
+Source Code : [eshop][https://github.com/jerry-tao/eshop]
 
-**[Chapter 1 Prepare][1]**
+```
+git clone git@github.com:jerry-tao/eshop.git
+git checkout chapter_1# 1~10
+```
+
+**[Chapter 1 Prepare][https://github.com/jerry-tao/rails_little_book/blob/master/chp_1/1_prepare.md]**
 
 - 搭建环境
 - 新建项目
 - 认识一下View和Controller和router
 - 认识git
 
-**[Chapter 2 First MVC][2]**
+**[Chapter 2 First MVC][https://github.com/jerry-tao/rails_little_book/blob/master/chp_2/2_first_mvc.md]**
 
 - MVC
 - CRUD
 - REST
 - git branch
-- \*Gemfile
+- *Gemfile
 - DSL
 
-**[Chapter 3 First Association][3]**
+**[Chapter 3 First Association][https://github.com/jerry-tao/rails_little_book/blob/master/chp_3/3_first_association.md]**
 
-- \*Migration
+- *Migration
 - Association
 - Validation
 - Seed
 - pull/request
 
-**[Chapter 4 Basic User System][4]**
+**[Chapter 4 Basic User System][https://github.com/jerry-tao/rails_little_book/blob/master/chp_4/4_basic_user_system.md]**
 
 - devise
 - initializer
-- \*routes
-- \*Association
+- *routes
+- *Association
 
-\*\*Chapter 5 Validates Associations Upload File and Pagination
+**[Chapter 5 Before Continue][https://github.com/jerry-tao/rails_little_book/blob/master/chp_5/5_before_continue.md]**
 
 - Validations
 - Associations
