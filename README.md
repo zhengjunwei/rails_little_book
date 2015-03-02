@@ -1,21 +1,21 @@
 Rails Little Book
 =================
 
-Source Code : [eshop][https://github.com/jerry-tao/eshop]
+Source Code : [eshop](https://github.com/jerry-tao/eshop)
 
 ```
 git clone git@github.com:jerry-tao/eshop.git
 git checkout chapter_1# 1~10
 ```
 
-**[Chapter 1 Prepare][https://github.com/jerry-tao/rails_little_book/blob/master/chp_1/1_prepare.md]**
+**[Chapter 1 Prepare](https://github.com/jerry-tao/rails_little_book/blob/master/chp_1/1_prepare.md)**
 
 - 搭建环境
 - 新建项目
 - 认识一下View和Controller和router
 - 认识git
 
-**[Chapter 2 First MVC][https://github.com/jerry-tao/rails_little_book/blob/master/chp_2/2_first_mvc.md]**
+**[Chapter 2 First MVC](https://github.com/jerry-tao/rails_little_book/blob/master/chp_2/2_first_mvc.md)**
 
 - MVC
 - CRUD
@@ -24,7 +24,7 @@ git checkout chapter_1# 1~10
 - *Gemfile
 - DSL
 
-**[Chapter 3 First Association][https://github.com/jerry-tao/rails_little_book/blob/master/chp_3/3_first_association.md]**
+**[Chapter 3 First Association](https://github.com/jerry-tao/rails_little_book/blob/master/chp_3/3_first_association.md)**
 
 - *Migration
 - Association
@@ -32,14 +32,14 @@ git checkout chapter_1# 1~10
 - Seed
 - pull/request
 
-**[Chapter 4 Basic User System][https://github.com/jerry-tao/rails_little_book/blob/master/chp_4/4_basic_user_system.md]**
+**[Chapter 4 Basic User System](https://github.com/jerry-tao/rails_little_book/blob/master/chp_4/4_basic_user_system.md)**
 
 - devise
 - initializer
 - *routes
 - *Association
 
-**[Chapter 5 Before Continue][https://github.com/jerry-tao/rails_little_book/blob/master/chp_5/5_before_continue.md]**
+**[Chapter 5 Before Continue](https://github.com/jerry-tao/rails_little_book/blob/master/chp_5/5_before_continue.md)**
 
 - Validations
 - Associations
@@ -70,7 +70,6 @@ Rails Test Details 3: Test Controllers
 
 Rails Test Details 4: Others
 
-[1]:	https://github.com/jerry-tao/rails_little_book/blob/master/chp_0/0_prepare.md
-[2]:	https://github.com/jerry-tao/rails_little_book/blob/master/chp_1/1_first_mvc.md
-[3]:	https://github.com/jerry-tao/rails_little_book/blob/master/chp_2/2_associate_model_and_views.md
-[4]:	https://github.com/jerry-tao/rails_little_book/blob/master/chp_3/3_basic_user_system.md
+Rails Gems
+
+Raiils Booklist
